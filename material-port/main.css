@@ -4,11 +4,29 @@
 
 html,
 body {
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Roboto', sans-serif;
   margin: 0;
   padding: 0;
   color: #fff;
-  font-size: 20px;
+  font-size: 16px;
+}
+
+/*---------------
+   Headers & Text
+-----------------*/
+h1,
+h2,
+h3 {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+p {
+  font-weight: 300;
+  line-height: 1.8em;
+  color: rgba(255,255,255,0.8);
 }
 
 /*---------------
@@ -30,7 +48,6 @@ body {
 }
 
 .hero-content h1 {
-  text-transform: uppercase;
   font-size: 200%;
   font-weight: 500;
   letter-spacing: 7px;
@@ -42,15 +59,80 @@ body {
 -----------------*/
 
 .projects-title {
-  background: #1de9c3;
-  text-align: center;
-  min-height: 45px;
+  min-height: 100px;
+  background-color: #42c4ac;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+
 }
 
 .projects-title h2 {
-  margin: 0;
-  text-transform: uppercase;
-  font-size: 200%;
-  font-weight: 500;
+  font-size: 175%;
+  font-weight: 300;
   letter-spacing: 7px;
+}
+
+/*------------------
+   Projects Section
+--------------------*/
+
+.project-container {
+  display: flex;
+
+}
+
+.project {
+  display: flex;
+  justify-content: space-around;
+  padding: 150px 100px;
+}
+
+.card {
+  box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+  background-color: #1D1D1D;
+}
+
+.card-img img {
+  width: 100%;
+  height: auto;
+}
+
+.card-stack {
+  font-size: 75%;
+  font-weight: 100;
+  color: #1de9c3;
+}
+
+.project-features {
+  margin: 0 45px;
+}
+/* Dark Projects */
+
+.dark {
+  background: black;
+}
+
+.dark .card {
+  flex: 3;
+}
+
+.dark .project-features {
+  flex: 2;
+}
+
+/* Light Projects */
+
+.light {
+  background: #42c4ac;
+}
+
+.light .card {
+  flex: 3;
+}
+
+.light .project-features {
+  flex: 2;
 }
